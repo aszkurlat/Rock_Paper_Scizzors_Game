@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: monospace, Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: honeydew;
+}
+
+body {
+    background-image: url('../img/background.png');
+    text-align: center;
+    margin: 30px auto;
+}
+
+p {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+i {
+    font-size: 4.5rem;
+    padding: 3%;
+    margin: 5%;
+    color: rgb(192, 137, 88);
+    border: 2px solid gray;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+i.active {
+    border-color: rgba(97, 97, 97, 0.5);
+    background-color: rgba(97, 97, 97, 0.5);
+}
+
+button {
+    display: block;
+    padding: 0.6rem 1.6rem;
+    border: 1.5px solid gray;
+    text-transform: uppercase;
+    background-color: rgba(80, 79, 79, 0.5);
+    font-weight: bold;
+    margin: 3% auto 5%;
+    transition: .3s;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 7px;
+    color: rgb(59, 156, 59);
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-color: rgba(97, 97, 97, 0.5);
+}
+
+.panel-choices,
+.panel-results,
+.panel-round {
+    display: inline-block;
+    width: 22%;
+    text-align: left;
+}
+
+.panel-choices>h2,
+.panel-results>h2,
+.panel-round>h2 {
+    text-transform: uppercase;
+}
+
+@media(orientation: portrait){
+   
+i {
+    font-size: 3.5rem;
+    margin: 5% 1%; 
+    }
+button{
+    font-size: 1.2rem;
+    padding: 0.6rem 1.2rem;
+    }
+.panel-choices,
+.panel-results,
+.panel-round {
+    width: 45%;
+    text-align: center;
+    margin-top: 10%;
+}
+.panel-choices>p,
+.panel-results>p,
+.panel-round>p {
+    font-size: 1rem;
+}
+.panel-choices>h2,
+.panel-results>h2,
+.panel-round>h2 {
+    font-size: 1.2rem;
+}
+}
