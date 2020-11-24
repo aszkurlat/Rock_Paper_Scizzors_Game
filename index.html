@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scizzors Game</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <h1>Rock Paper Scizzors Game</h1>
+    <p>Choose an option:</p>
+    <i class="fas fa-hand-paper paper" data-option="paper"></i>
+    <i class="fas fa-hand-rock" data-option="rock"></i>
+    <i class="fas fa-hand-scissors" data-option="scizzors"></i>
+
+    <button class="play">Let's play</button>
+
+    <div class="panel-choices">
+        <h2>Choices</h2>
+        <p>Your choice: <span data-summary="your-choice"></span></p>
+        <p>AI choice: <span data-summary="ai-choice"></span></p>
+        <p>Winner: <span data-summary="who-win"></span></p>
+    </div>
+
+    <div class="panel-results">
+        <h2>Results</h2>
+        <p class="wins">Won: <span>0</span></p>
+        <p class="losses">Lost: <span>0</span></p>
+        <p class="draws">Drawn: <span>0</span></p>
+    </div>
+
+    <div class="panel-round">
+        <h2 class="numbers">Number of games: <span>0</span></h2>
+    </div>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
